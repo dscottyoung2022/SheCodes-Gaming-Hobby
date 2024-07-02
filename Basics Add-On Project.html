@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaming - My Hobby 🎮</title>
+    <style>
+      body {
+        background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 24px;
+        margin: 15px 0;
+      }
+
+      .darkt {
+        display: block;
+        margin: 0 auto;
+        font-size: 24px;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 5px 10px;
+        background: black;
+        color: white;
+      }
+
+      .darkt:hover {
+        background: white;
+        color: black;
+      }
+
+      .container {
+        max-width: 600px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px auto;
+      }
+
+      .game-fuel {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+      .game-fuel:hover {
+        filter: contrast(50%);
+        transform: scale(1.2);
+      }
+
+      .grid img {
+        width: 100%;
+        border-radius: 8px;
+        object-fit: cover;
+        transition: all 150ms ease-in-out;
+      }
+      .grid img:hover {
+        transform: scale(2);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 250px 212px;
+        grid-gap: 5px;
+        width: 300px;
+        margin-right: 225px;
+        margin-left: 70px;
+        margin-bottom: 4px;
+      }
+
+      .vgb {
+        display: block;
+        margin: 0 auto;
+        border: 2px solid #669;
+        background: white;
+        font-size: 24px;
+        border-radius: 6px;
+        padding: 10px 15px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .vgb:hover {
+        background: #669;
+        color: white;
+        cursor: pointer;
+      }
+
+      .dark {
+        background: linear-gradient(
+          109.6deg,
+          rgb(36, 45, 57) 11.2%,
+          rgb(16, 37, 60) 51.2%,
+          rgb(0, 0, 0) 98.6%
+        );
+        color: white;
+      }
+      .dark .container {
+        background: rgba(255, 255, 255, 0.1);
+      }
+      .dark a {
+        color: #669;
+      }
+      .name {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="darkt">Change Theme</button>
+    <div class="container">
+      <h1>Video Games</h1>
+      <h2>My Favorite Hobby</h2>
+      <a
+        href="https://www.si.edu/spotlight/the-father-of-the-video-game-the-ralph-baer-prototypes-and-electronic-games/video-game-history"
+        target="_blank"
+      >
+        <img
+          class="game-fuel"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/807/original/Female_Right_Gaming.jpg?1711484876"
+          alt="Female Gaming with Drink"
+        />
+      </a>
+      <div class="grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/806/original/Female_Middle_Gaming.jpg?1711484871"
+          alt="Female Gaming Up Close"
+        />
+        <img
+          class="glaugh"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/808/original/Female_Up_Gaming.jpg?1711484884"
+          alt="Female Laughing while Gaming"
+        />
+      </div>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/805/original/Female_Left_Gaming.jpg?1711484864"
+        alt="Female Focused on Gaming"
+      />
+
+      <p>
+        Today, video game development requires numerous interdisciplinary
+        skills, vision, teamwork, and liaisons between different parties,
+        including developers, publishers, distributors, retailers, hardware
+        manufacturers, and other marketers, to successfully bring a game to its
+        consumers. As of 2020, the global video game market had estimated annual
+        revenues of US$159 billion across hardware, software, and services,
+        which is three times the size of the global music industry and four
+        times that of the film industry in 2019,[1] making it a formidable
+        heavyweight across the modern entertainment industry. The video game
+        market is also a major influence behind the electronics industry, where
+        personal computer component, console, and peripheral sales, as well as
+        consumer demands for better game performance, have been powerful driving
+        factors for hardware design and innovation.
+      </p>
+      <button class="vgb">
+        <a href="https://www.gamestop.com/" target="_blank">Video Games</a>
+      </button>
+    </div>
+    <footer>
+      Coded with 💜 by
+      <a class="name" href="https://github.com/dscottyoung2022" target="_blank"
+        >Daniella Scott-Young</a
+      >
+    </footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+
+      let darkt = document.querySelector(".darkt");
+      darkt.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
